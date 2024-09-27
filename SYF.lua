@@ -140,7 +140,7 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 
-	Name = "宋云飞我操你妈"
+	Name = "SYF我操你妈"
 
 })
 Tab:AddSlider({
@@ -259,7 +259,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "宋云飞私募傻逼"
+TextLabel.Text = "SYF🤓"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -1202,7 +1202,7 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
 })
 Tab:AddButton({
-  Name = "The Rake 1",
+  Name = "The Rake不推荐",
   Callback = function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua"))()
   end
@@ -1216,9 +1216,9 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Project(貌似没用了)",
+	Name = "Project(SYF汉化)",
 	Callback = function()
-	loadstring(game:HttpGet("https://scriptblox.com/raw/The-Rake-REMASTERED-Project-14329"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/SYF---The--Rake.lua"))()
 	end
 })
 
@@ -1579,7 +1579,7 @@ Tab:AddButton({
   end
 })
 local Tab= Window:MakeTab({
-	Name = "💮武器库💮",
+	Name = "武器库",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
