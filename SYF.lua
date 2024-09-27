@@ -622,7 +622,8 @@ end)
 
 Tab:AddButton({
 	Name = "控制玩家(汉化)",
-	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/flyspeed7/XiaoLing-CODE.tk3usj449llspw1/main/%E7%8E%A9%E5%AE%B6%E6%8E%A7%E5%88%B6%20%E6%B1%89%E5%8C%96.txt"))()
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/Son%20Yunfei%20Hub.lua"))()
   	end
 })
 
