@@ -1040,7 +1040,7 @@ loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2R
 
 local Tab = Window:MakeTab({
   Name = "自然灾害模拟器",
-  Icon = "rbxassetid://7733779610",
+  Icon = "rbxassetid://7743878358",
   PremiumOnly = false
   })
   local Section = Tab:AddSection({
@@ -1086,7 +1086,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "IY指令基础指令",
-  Icon = "rbxassetid://7733798747",
+  Icon = "rbxassetid://7743878358",
   PremiumOnly = false
   })
   
