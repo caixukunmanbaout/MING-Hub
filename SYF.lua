@@ -1,3 +1,7 @@
+                      --SZ开始二改我的了?
+                      --偷看我源码全思慕
+            --你们好呀我是贝利亚我又来破坏地球了
+            --你们好呀我是贝利亚我又来破坏地球了
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "lol",
@@ -29,7 +33,7 @@ wait(1)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = ":]",
-    Text = "骗你的，MING,启动!",
+    Text = "骗你的，原神启动!",
     Duration = 5, 
 })
 wait(2)
@@ -73,7 +77,7 @@ LBL.Font = Enum.Font.GothamSemibold
 LBL.Text = "TextLabel"
 LBL.TextColor3 = Color3.new(1, 1, 1)
 LBL.TextScaled = true
-LBL.TextSize = 14
+LBL.TextSize = 12
 LBL.TextWrapped = true
 LBL.Visible = true
 
@@ -259,7 +263,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "SYF🤓"
+TextLabel.Text = "飞行 V3⁽ˢʸᶠ⁾"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -1039,6 +1043,26 @@ loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2R
 })
 
 local Tab = Window:MakeTab({
+	Name = "造船寻宝",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "造船寻宝(要卡密)推荐",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NooVster/NOOVHUB/main/Source"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "😋👌点我复制卡密🤤",
+	Callback = function()
+	setclipboard("96b5ef6e00-8ff6683644-00beaf24cd")
+end
+})
+
+local Tab = Window:MakeTab({
   Name = "自然灾害模拟器",
   Icon = "rbxassetid://7743878358",
   PremiumOnly = false
@@ -1052,7 +1076,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "黑洞",
 	Callback = function ()
-	loadstring(game:HttpGet("https://pastefy.app/pYhER1z4/raw"))()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/SYF--Black-Hole.lua")()
 	end
 })
 
@@ -1201,12 +1225,6 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://7733779610",
   PremiumOnly = false
 })
-Tab:AddButton({
-  Name = "The Rake不推荐",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Cloud-script/main/The%20Rake.lua"))()
-  end
-})
 
 Tab:AddButton({
 	Name = "LynX",
@@ -1229,13 +1247,13 @@ local Tab = Window:MakeTab({
 })
 
     local Tab = Window:MakeTab({
-	Name = "CW(战斗勇士)",
+	Name = "战斗勇士",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-  Name = "无限体力和跳跃+",
+  Name = "无限体力",
   Callback = function ()
     for i,v in pairs(getgc(true)) do
    if typeof(v) == "table" and rawget(v, "getIsMaxed") then
@@ -1439,12 +1457,6 @@ end
 end
   end
 })
-Tab:AddButton({
-  Name = "Arsonia-Hub",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other/Arsenal/Less_FileSize/Arsonia_UI.lua"))()
-  end
-})
 
 local Tab= Window:MakeTab({
 	Name = "巴掌大战",
@@ -1453,240 +1465,7 @@ local Tab= Window:MakeTab({
 })
 
 local Tab= Window:MakeTab({
-	Name = "写一封信",
-	Icon = "rbxassetid://7733779610",
-	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "Letter-Hub",
-  Callback = function ()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/insuretya/writealetter/main/writtealetter.lua')))()
-  end
-})
-Tab:AddButton({
-  Name = "自动注译",
-  Callback = function ()
-_G.AutoInfNotes = false
-while _G.AutoInfNotes == true do
-
- 
-local A_1 = "made by demo"
-local A_2 = false
-local Event = game:GetService("ReplicatedStorage").COM.Game.RequestTakeNote
-Event:InvokeServer(A_1, A_2)
-
-end
-
-  end
-})
-Tab:AddButton({
-  Name = "动画",
-  Callback = function ()
-    for _,v in pairs(game.ReplicatedStorage.Emotes.Packs:GetChildren()) do
-   local anim = require(v)
-   anim.Required = false;
-end
-
-  end
-})
-Tab:AddButton({
-  Name = "动画",
-  Callback = function ()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/Shar-Script/main/Write%20a%20Letter.lua')))()
-  end
-})
-Tab:AddButton({
-  Name = "无限文字",
-  Callback = function ()
-    local text = "infinite notes made by tabz[#[9432"
---[[
-   __                __                 
-  /  |              /  |                
- _$$ |_     ______  $$ |____   ________ 
-/ $$   |   /      \ $$      \ /        |
-$$$$$$/    $$$$$$  |$$$$$$$  |$$$$$$$$/ 
-  $$ | __  /    $$ |$$ |  $$ |  /  $$/  
-  $$ |/  |/$$$$$$$ |$$ |__$$ | /$$$$/__ 
-  $$  $$/ $$    $$ |$$    $$/ /$$      |
-   $$$$/   $$$$$$$/ $$$$$$$/  $$$$$$$$/ 
-                                        
-                                        
-                                        
-
-Inf Notes Script by tabz#9432 | I GET BANNED ALLOT SO IT MIGHT NOT BE ACCURATE
-https://www.roblox.com/games/8425637426/Write-a-Letter
-]]--
-while wait() do
-local args = {
-    [1] = text,
-    [2] = false
-}
-wait()
-game:GetService("ReplicatedStorage").COM.Game.RequestTakeNote:InvokeServer(unpack(args))
-local args = {
-    [1] = "Drop"
-}
-game:GetService("Players").LocalPlayer.Character.Note.ClassEvent:FireServer(unpack(args))
-end 
-
-  end
-})
-Tab:AddButton({
-  Name = "消除文字",
-  Callback = function ()
-    --[[
-   __                __                 
-  /  |              /  |                
- _$$ |_     ______  $$ |____   ________ 
-/ $$   |   /      \ $$      \ /        |
-$$$$$$/    $$$$$$  |$$$$$$$  |$$$$$$$$/ 
-  $$ | __  /    $$ |$$ |  $$ |  /  $$/  
-  $$ |/  |/$$$$$$$ |$$ |__$$ | /$$$$/__ 
-  $$  $$/ $$    $$ |$$    $$/ /$$      |
-   $$$$/   $$$$$$$/ $$$$$$$/  $$$$$$$$/ 
-                                        
-                                        
-                                        
-
-Clear everyone's Notes Script by tabz#9432 | I GET BANNED ALLOT SO IT MIGHT NOT BE ACCURATE
-https://www.roblox.com/games/6423728755/new-physics-engine
-]]--
-while wait() do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-67, 4, 95)
-wait()
-local args = {
-    [1] = workspace.BulletinBoards.Notes.Note
-}
-wait()
-game:GetService("ReplicatedStorage").COM.Game.RequestPinPickUp:InvokeServer(unpack(args))
-local args = {
-    [1] = "Drop"
-}
-game:GetService("Players").LocalPlayer.Character.Note.ClassEvent:FireServer(unpack(args))
-end 
-
-  end
-})
-local Tab= Window:MakeTab({
-	Name = "The Rake",
-	Icon = "rbxassetid://7733779610",
-	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "Source-Hub",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/RakeEvolved/Stable/Source.lua"))()
-  end
-})
-local Tab= Window:MakeTab({
 	Name = "武器库",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
-})
-Tab:AddButton({
-  Name = "自瞄(区分团队)",
-  Callback = function ()
-    local fov = 100
-local maxTransparency = 0.1 -- TransparÃªncia mÃ¡xima dentro do cÃ­rculo (0.1 = 10% de transparÃªncia)
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-local Teams = game:GetService("Teams") -- Adicione esta linha para acessar os times
-local Cam = game.Workspace.CurrentCamera
-
-local FOVring = Drawing.new("Circle")
-FOVring.Visible = true
-FOVring.Thickness = 2
-FOVring.Color = Color3.fromRGB(128, 0, 128) -- Cor roxa
-FOVring.Filled = false
-FOVring.Radius = fov
-FOVring.Position = Cam.ViewportSize / 2
-FOVring.Transparency = 0.1 -- TransparÃªncia inicial igual ao segundo script
-
-local function updateDrawings()
-    local camViewportSize = Cam.ViewportSize
-    FOVring.Position = camViewportSize / 2
-end
-
-local function onKeyDown(input)
-    if input.KeyCode == Enum.KeyCode.Delete then
-        RunService:UnbindFromRenderStep("FOVUpdate")
-        FOVring:Remove()
-    end
-end
-
-UserInputService.InputBegan:Connect(onKeyDown)
-
-local function lookAt(target)
-    local lookVector = (target - Cam.CFrame.Position).unit
-    local newCFrame = CFrame.new(Cam.CFrame.Position, Cam.CFrame.Position + lookVector)
-    Cam.CFrame = newCFrame
-end
-
-local function calculateTransparency(distance)
-    -- Ajuste a transparÃªncia com base na distÃ¢ncia do centro do cÃ­rculo
-    local maxDistance = fov -- A distÃ¢ncia mÃ¡xima do centro do cÃ­rculo
-    local transparency = (1 - (distance / maxDistance)) * maxTransparency
-    return transparency
-end
-
-local function getClosestPlayerInFOV(trg_part)
-    local nearest = nil
-    local last = math.huge
-    local playerMousePos = Cam.ViewportSize / 2
-    local localPlayer = Players.LocalPlayer
-    local localPlayerTeam = localPlayer.Team
-
-    for _, player in ipairs(Players:GetPlayers()) do
-        if player ~= localPlayer then
-            local part = player.Character and player.Character:FindFirstChild(trg_part)
-            if part then
-                local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
-                local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
-                
-                -- Adicione uma verificaÃ§Ã£o de equipe aqui
-                if isVisible and distance < fov and player.Team ~= localPlayerTeam then
-                    if distance < last then
-                        last = distance
-                        nearest = player
-                    end
-                end
-            end
-        end
-    end
-
-    return nearest
-end
-
-RunService.RenderStepped:Connect(function()
-    updateDrawings()
-    local closest = getClosestPlayerInFOV("Head")
-    if closest and closest.Character:FindFirstChild("Head") then
-        lookAt(closest.Character.Head.Position)
-
-        if closest then
-            local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
-            local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
-            FOVring.Transparency = calculateTransparency(distance)
-        else
-            FOVring.Transparency = 0.1 -- Mantenha completamente visÃ­vel quando nenhum jogador estiver no FOV
-        end
-    else
-        FOVring.Transparency = 0.1 -- Mantenha completamente visÃ­vel quando nenhum jogador estiver no FOV
-    end
-end)
-
-  end
-})
-Tab:AddButton({
-  Name = "自瞄、区分墙壁、团队(要卡密)",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Dustin21335/Universal-aimbot-Roblox/main/Aimbot.lua"))()
-  end
-})
-Tab:AddButton({
-	Name = "复制卡密",
-	Callback = function()
-	setclipboard("Aim2143")
-end
 })

@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+--我就一个破翻译的还要看我源码
 if game.GameId == 847722000 then
 	if getgenv().RakeGui then
 		return
