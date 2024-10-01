@@ -98,16 +98,17 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-UI/refs/heads/main/SYF-UI.lua"))()
-local Window = OrionLib:MakeWindow({IntroText = "SYF Hub",Name = "SYF Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "SYF Hub"})
+local Window = OrionLib:MakeWindow({IntroText = "MING",Name = "MING Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MING Hub"})
 local about = Window:MakeTab({
     Name = "首页",
-    Icon = "rbxassetid://7743878358",
+    Icon = "rbxassetid://7743875962",
     PremiumOnly = false
 })
 about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("你现在服务器的ID"," "..game.GameId.."")
-about:AddParagraph("版本:V0.3")
+about:AddParagraph("版本:V0.3.2")
+about:AddParagraph("更新内容: 将SYF更改为MING")
 about:AddParagraph("随缘更新")
 about:AddParagraph("更新时间不知道🤓👌")
 about:AddParagraph("😋😋😋")
@@ -124,7 +125,7 @@ about:AddParagraph("😵")
 
 local Tab = Window:MakeTab({
   Name = "复制源码",
-  Icon = "rbxassetid://7733798747",
+  Icon = "rbxassetid://7743873212",
   PremiumOnly = false
   })
   
@@ -143,7 +144,7 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 
-	Name = "SYF我操你妈"
+	Name = "哈哈哈"
 
 })
 Tab:AddSlider({
@@ -262,7 +263,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "飞行 V3⁽ˢʸᶠ⁾"
+TextLabel.Text = "飞行 V3⁽ᵐⁱⁿᵍ⁾"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -562,7 +563,7 @@ end
 end)
 mine.MouseButton1Down:connect(function()
 if speeds == 1 then
-speed.Text = 'cannot be less than 1'
+speed.Text = '你只能最低把速度调成 1'
 wait(1)
 speed.Text = speeds
 else
@@ -712,7 +713,7 @@ label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(139,0,0)
 label.Size = UDim2.new(0, 100, 0, 20)
 label.Font = Enum.Font.SourceSans
-label.Text = "SYF"
+label.Text = "MING"
 label.TextColor3 = Color3.fromRGB(0, 0, 0)
 label.TextScaled = true
 label.TextSize = 5.000
@@ -969,7 +970,7 @@ mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.Req
 
 local Tab = Window:MakeTab({
   Name = "极速传奇",
-  Icon = "rbxassetid://7733779610",
+  Icon = "rbxassetid://7733666258",
   PremiumOnly = false
   })
 
@@ -982,7 +983,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb
 
 local Tab = Window:MakeTab({
   Name = "压力",
-  Icon = "rbxassetid://7733779610",
+  Icon = "rbxassetid://7733741741",
   PremiumOnly = false
   })
   
@@ -1003,7 +1004,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "DOORS",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733798747",
 	PremiumOnly = false
 })
 
@@ -1023,7 +1024,7 @@ local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or 
 
 local Tab = Window:MakeTab({
 	Name = "DOORS FLOOR2",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733955850",
 	PremiumOnly = false
 })
 
@@ -1043,7 +1044,7 @@ loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2R
 
 local Tab = Window:MakeTab({
 	Name = "造船寻宝",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733678330",
 	PremiumOnly = false
 })
 
@@ -1157,13 +1158,13 @@ end
 
 local Tab = Window:MakeTab({
     Name = " 监狱人生",
-    Icon = "rbxassetid://7733779610",
+    Icon = "rbxassetid://7733666258",
     PremiumOnly = false
 })
 
 local Tab = Window:MakeTab({
 	Name = "FE脚本",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733666258",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -1187,7 +1188,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
   Name = "脚本中心",
-  Icon = "rbxassetid://7733765398",
+  Icon = "rbxassetid://7743873212",
   PremiumOnly = false
 })
 
@@ -1215,7 +1216,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
   Name = "The Rake",
-  Icon = "rbxassetid://7733779610",
+  Icon = "rbxassetid://8997382869",
   PremiumOnly = false
 })
 
@@ -1227,7 +1228,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Project(SYF汉化)",
+	Name = "Project(MING汉化)",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/SYF---The--Rake.lua"))()
 	end
@@ -1235,13 +1236,13 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "最强的战场",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733666258",
 	PremiumOnly = false
 })
 
     local Tab = Window:MakeTab({
 	Name = "战斗勇士",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733666258",
 	PremiumOnly = false
 })
 
@@ -1379,7 +1380,7 @@ game.Players.PlayerAdded:Connect(playerAdded)
 
 local Tab = Window:MakeTab({
     Name = "兵工厂",
-    Icon = "rbxassetid://7733779610",
+    Icon = "rbxassetid://7733666258",
     PremiumOnly = false
 })
 
@@ -1453,12 +1454,12 @@ end
 
 local Tab= Window:MakeTab({
 	Name = "巴掌大战",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733666258",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "1",
+	Name = "1(可能会发生冲突)",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
     end
@@ -1466,6 +1467,6 @@ Tab:AddButton({
 
 local Tab= Window:MakeTab({
 	Name = "武器库",
-	Icon = "rbxassetid://7733779610",
+	Icon = "rbxassetid://7733666258",
 	PremiumOnly = false
 })
