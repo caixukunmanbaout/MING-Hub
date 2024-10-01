@@ -1,4 +1,3 @@
-                      --SZ开始二改我的了?
                       --偷看我源码全思慕
             --你们好呀我是贝利亚我又来破坏地球了
             --你们好呀我是贝利亚我又来破坏地球了
@@ -98,7 +97,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-UI/refs/heads/main/SYF-UI.lua"))()
 local Window = OrionLib:MakeWindow({IntroText = "SYF Hub",Name = "SYF Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "SYF Hub"})
 local about = Window:MakeTab({
     Name = "首页",
@@ -343,8 +342,8 @@ local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 nowe = false 
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "我操你妈的宋云飞";
-Text = "我操你妈的宋云飞";
+Title = "我操你妈的SYF";
+Text = "我操你妈的SYF";
 Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5; 
 
@@ -988,7 +987,7 @@ local Tab = Window:MakeTab({
   })
   
   Tab:AddButton({
-	Name = "DX压力(好用)",
+	Name = "NB压力(好用)",
 	Callback = function()
     loadstring(game:HttpGet(" https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure"))()
     end
@@ -1064,7 +1063,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "自然灾害模拟器",
-  Icon = "rbxassetid://7743878358",
+  Icon = "rbxassetid://7743873633",
   PremiumOnly = false
   })
   local Section = Tab:AddSection({
@@ -1188,7 +1187,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
   Name = "脚本中心",
-  Icon = "rbxassetid://7743866529",
+  Icon = "rbxassetid://7733765398",
   PremiumOnly = false
 })
 
@@ -1212,12 +1211,6 @@ Tab:AddButton({
   Callback = function ()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\80\100\84\55\99\65\82\84"))()
   end
-})
-Tab:AddButton({
-	Name = "复制皇脚本卡密",
-	Callback = function()
-	setclipboard("U2FsdGVkX1/gbhCW+xDOFYcV1pydxb/ni+9cAk72+WM=")
-end
 })
 
 local Tab = Window:MakeTab({
@@ -1391,7 +1384,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "兵工厂",
+	Name = "1",
 	Callback = function()
      loadstring(game:HttpGet("https://pastebin.com/raw/p634jAYs"))()
   	end    
@@ -1462,6 +1455,13 @@ local Tab= Window:MakeTab({
 	Name = "巴掌大战",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+    end
 })
 
 local Tab= Window:MakeTab({
