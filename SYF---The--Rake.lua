@@ -6,13 +6,13 @@ if game.GameId == 847722000 then
 
 	if syn then
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "SYF",
+			Title = "MING",
 			Text = "只是翻译",
 			Duration = 5
 		})
 	else
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "SYF",
+			Title = "明-Hub",
 			Text = "只是翻译",
 			Duration = 5
 		})
