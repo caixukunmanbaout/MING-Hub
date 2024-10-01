@@ -12,7 +12,7 @@ if game.GameId == 847722000 then
 		})
 	else
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "明-Hub",
+			Title = "MING",
 			Text = "只是翻译",
 			Duration = 5
 		})
@@ -228,9 +228,9 @@ if game.GameId == 847722000 then
 
 
 	local Window = Rayfield:CreateWindow({
-		Name = "Project [SYF汉化]",
-		LoadingTitle = "Project [SYF汉化]",
-		LoadingSubtitle = "SYF Hub",
+		Name = "Project [MING汉化]",
+		LoadingTitle = "Project [MING汉化]",
+		LoadingSubtitle = "MING Hub",
 		ConfigurationSaving = {
 			Enabled = true,
 			FolderName = "ProjectTheRake",
@@ -924,7 +924,7 @@ if game.GameId == 847722000 then
 							ScrapESP.Color = Color3.fromRGB(77, 35, 1)
 							ScrapESP.Size = 25
 							ScrapESP.Font = 25
-							ScrapESP.Text = "废金属"..""..tostring(v.Parent.PointsVal.Value).."积分 第"..tostring(v.Parent.LevelVal.Value).."级"
+							ScrapESP.Text = "废金属"..""..tostring(v.Parent.PointsVal.Value).."积分 "..tostring(v.Parent.LevelVal.Value).."级"
 							ScrapESP.Visible = false
 							game:FindService("RunService").Heartbeat:Connect(function()
 								if AllowRunService == true then
@@ -1136,9 +1136,9 @@ if game.GameId == 847722000 then
 	end
 
 	ExploitsTab:CreateToggle({
-		Name = "抢空投大手子",
+		Name = "开空投无冷却",
 		CurrentValue = false,
-		Flag = "抢空投大手子",
+		Flag = "开空投无冷却",
 		Callback = function(state)
 			_G.InstaOpenSupplyDrop = state
 		end,
