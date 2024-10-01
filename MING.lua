@@ -1,41 +1,3 @@
-                      --偷看我源码全思慕
-            --你们好呀我是贝利亚我又来破坏地球了
-            --你们好呀我是贝利亚我又来破坏地球了
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "lol",
-    Text = "你没有加入白名单,即将被踢出",
-    Duration = 5, 
-})
-wait(2)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "三",
-    Text = "三",
-    Duration = 5, 
-})
-wait(1)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "二",
-    Text = "二",
-    Duration = 5, 
-})
-wait(1)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "一",
-    Text = "一",
-    Duration = 5, 
-})
-wait(1)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = ":]",
-    Text = "骗你的，原神启动!",
-    Duration = 5, 
-})
-wait(2)
 print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -45,15 +7,8 @@ print("Anti Afk On")
 		end)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "反挂机已自动开启",
-    Text = "被踢出的概率大大滴降低",
-    Duration = 5,
-})
-wait(2)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
     Title = "启动成功",
-    Text = "我超你玛"..game.Players.LocalPlayer.Name.."，欢迎使用Son Yunfei Hub",
+    Text = "欢迎"..game.Players.LocalPlayer.Name.."使用MING Hub                               [反挂机以自动开启]",
     Duration = 5,
 })
 
@@ -69,14 +24,14 @@ LBL.Name = "LBL"
 LBL.Parent = LBLG
 LBL.BackgroundColor3 = Color3.new(1, 1, 1)
 LBL.BackgroundTransparency = 1
-LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.BorderColor3 = Color3.new(25, 25, 25)
 LBL.Position = UDim2.new(0.75,0,0.010,0)
 LBL.Size = UDim2.new(0, 133, 0, 30)
 LBL.Font = Enum.Font.GothamSemibold
 LBL.Text = "TextLabel"
 LBL.TextColor3 = Color3.new(1, 1, 1)
 LBL.TextScaled = true
-LBL.TextSize = 12
+LBL.TextSize = 10
 LBL.TextWrapped = true
 LBL.Visible = true
 
@@ -93,7 +48,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("北京时间:"..os.date("%H")..":"..os.date("%M")..":"..os.date("%S"))
+	FpsLabel.Text = ("🇨🇳北京时间:"..os.date("%H")..":"..os.date("%M")..":"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -195,7 +150,7 @@ Tab:AddSlider({
 })
 
 Tab:AddColorpicker({ 
- Name = "颜色选择器", 
+ Name = "颜色选择器(没用)", 
  Default = Color3.fromRGB(255, 0, 0), 
  Callback = function(Value) 
      print(Value) 
@@ -969,8 +924,8 @@ mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.Req
 })
 
 local Tab = Window:MakeTab({
-  Name = "极速传奇",
-  Icon = "rbxassetid://7733666258",
+  Name = "忍者传奇",
+  Icon = "rbxassetid://7743870731",
   PremiumOnly = false
   })
 
@@ -980,6 +935,333 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
     end
 })
+
+autoswing = false
+function swinging()
+    spawn(
+        function()
+            while autoswing == true do
+                task.wait()
+                game:GetService("Players").LocalPlayer.ninjaEvent:FireServer("swingKatana")
+                if not autoswing then
+                    break
+                end
+            end
+        end
+    )
+end
+autosell = false
+function selling()
+    spawn(
+        function()
+            while autosell == true do
+                task.wait(.01)
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                        game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+                    wait(.1)
+                    game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                        game.Workspace.Part.CFrame
+                    if not autosell then
+                        break
+                    end
+                end
+            end
+        end
+    )
+end
+autosellmax = false
+function maxsell()
+    spawn(
+        function()
+            while autosellmax == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    if game.Players.LocalPlayer.PlayerGui.gameGui.maxNinjitsuMenu.Visible == true then
+                        game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                            game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+                        task.wait()
+                        game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame =
+                            game.Workspace.Part.CFrame
+                    end
+                end
+                if not autosellmax then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyswords = false
+function buyswords()
+    spawn(
+        function()
+            while autobuyswords == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllSwords"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuyswords then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuybelts = false
+function buybelts()
+    spawn(
+        function()
+            while autobuybelts == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllBelts"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuybelts then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyranks = false
+function buyranks()
+    spawn(
+        function()
+            while autobuyranks == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyRank"
+                    local oh2 = game:GetService("ReplicatedStorage").Ranks.Ground:GetChildren()
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i].Name)
+                    end
+                end
+                if not autobuyranks then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyskill = false
+function buyskill()
+    spawn(
+        function()
+            while autobuyskill == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllSkills"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuyskill then
+                    break
+                end
+            end
+        end
+    )
+end
+autobuyshurikens = false
+function buyshurikens()
+    spawn(
+        function()
+            while autobuyshurikens == true do
+                task.wait()
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                    local oh1 = "buyAllShurikens"
+                    local oh2 = {
+                        "Ground",
+                        "Astral Island",
+                        "Space Island",
+                        "Tundra Island",
+                        "Eternal Island",
+                        "Sandstorm",
+                        "Thunderstorm",
+                        "Ancient Inferno Island",
+                        "Midnight Shadow Island",
+                        "Mythical Souls Island",
+                        "Winter Wonder Island"
+                    }
+                    for i = 1, #oh2 do
+                        game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                    end
+                end
+                if not autobuyshurikens then
+                    break
+                end
+            end
+        end
+    )
+end
+
+Tab:AddToggle(
+    {
+        Name = "自动挥舞",
+        Default = false,
+        Callback = function(x)
+            autoswing = x
+            if autoswing then
+                swinging()
+            end
+        end
+    }
+)
+
+Tab:AddToggle(
+    {
+        Name = "自动售卖",
+        Default = false,
+        Callback = function(x)
+            autosell = x
+            if autosell then
+                selling()
+            end
+        end
+    }
+)
+    
+Tab:AddToggle(
+    {
+        Name = "存满了自动售卖",
+        Default = false,
+        Callback = function(x)
+            autosellmax = x
+            if autosellmax then
+                maxsell()
+            end
+        end
+    }
+)
+
+local Section = Tab:AddSection({
+	Name = "自动购买功能"
+})
+
+Tab:AddToggle(
+    {
+        Name = "自动购买剑",
+        Default = false,
+        Callback = function(x)
+            autobuyswords = x
+            if autobuyswords then
+                buyswords()
+            end
+        end
+    }
+)
+
+Tab:AddToggle(
+    {
+        Name = "自动购买腰带",
+        Default = false,
+        Callback = function(x)
+            autobuybelts = x
+            if autobuybelts then
+                buybelts()
+            end
+        end
+    }
+)
+
+Tab:AddToggle(
+    {
+        Name = "自动购买称号（等级）",
+        Default = false,
+        Callback = function(x)
+            autobuyranks = x
+            if autobuyranks then
+                buyranks()
+            end
+        end
+    }
+)
+
+Tab:AddToggle(
+    {
+        Name = "自动购买忍术",
+        Default = false,
+        Callback = function(x)
+            autobuyskill = x
+            if autobuyskill then
+                buyskill()
+            end
+        end
+    }
+)
+
+Tab:AddToggle(
+    {
+        Name = "自动购买（全部打开就行）",
+        Default = false,
+        Callback = function(x)
+            autobuyshurikens = x
+            if autobuyshurikens then
+                buyshurikens()
+            end
+        end
+    }
+)
+
+Tab:AddButton(
+    {
+        Name = "解锁所有岛",
+        Callback = function()
+            for _, v in next, game.workspace.islandUnlockParts:GetChildren() do
+                if v then
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.islandSignPart.CFrame
+                    wait(.5)
+                end
+            end
+        end
+    }
+)
 
 local Tab = Window:MakeTab({
   Name = "压力",
@@ -1216,7 +1498,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
   Name = "The Rake",
-  Icon = "rbxassetid://8997382869",
+  Icon = "rbxassetid://7733798799",
   PremiumOnly = false
 })
 
@@ -1236,13 +1518,13 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "最强的战场",
-	Icon = "rbxassetid://7733666258",
+	Icon = "rbxassetid://7743872365",
 	PremiumOnly = false
 })
 
     local Tab = Window:MakeTab({
 	Name = "战斗勇士",
-	Icon = "rbxassetid://7733666258",
+	Icon = "rbxassetid://8997382869",
 	PremiumOnly = false
 })
 
@@ -1454,12 +1736,12 @@ end
 
 local Tab= Window:MakeTab({
 	Name = "巴掌大战",
-	Icon = "rbxassetid://7733666258",
+	Icon = "rbxassetid://7734070982",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "1(可能会发生冲突)",
+	Name = "1",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
     end
@@ -1467,6 +1749,6 @@ Tab:AddButton({
 
 local Tab= Window:MakeTab({
 	Name = "武器库",
-	Icon = "rbxassetid://7733666258",
+	Icon = "rbxassetid://7733920444",
 	PremiumOnly = false
 })
