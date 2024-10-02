@@ -1,3 +1,14 @@
+--[[
+                    
+
+你们好呀
+我是贝利亚
+我要来破坏地球了
+奥特曼们都被我打败了
+你们敢不敢来阻止我
+
+
+--]]
 print("Anti Afk On")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -8,7 +19,7 @@ print("Anti Afk On")
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "启动成功",
-    Text = "欢迎"..game.Players.LocalPlayer.Name.."使用MING Hub                               [反挂机以自动开启]",
+    Text = "欢迎"..game.Players.LocalPlayer.Name.."使用MING Hub                              [反挂机以自动开启]",
     Duration = 5,
 })
 
@@ -52,7 +63,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-UI/refs/heads/main/SYF-UI.lua"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/MING-UI/refs/heads/main/MING-UI.lua"))()
 local Window = OrionLib:MakeWindow({IntroText = "MING",Name = "MING Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MING Hub"})
 local about = Window:MakeTab({
     Name = "首页",
@@ -97,58 +108,6 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
   })
 
-local Section = Tab:AddSection({
-
-	Name = "哈哈哈"
-
-})
-Tab:AddSlider({
-
-	Name = "速度",
-
-	Min = 16,
-
-	Max = 200,
-
-	Default = 16,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-
-	end    
-
-})
-Tab:AddSlider({
-
-	Name = "跳跃高度",
-
-	Min = 50,
-
-	Max = 200,
-
-	Default = 50,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-
-	end    
-
-})
-
 Tab:AddColorpicker({ 
  Name = "颜色选择器(没用)", 
  Default = Color3.fromRGB(255, 0, 0), 
@@ -156,7 +115,7 @@ Tab:AddColorpicker({
      print(Value) 
  end           
  }) 
-  
+
 Tab:AddButton({
   Name = "飞行V3",
   Callback = function ()
@@ -588,13 +547,60 @@ Tab:AddButton({
 
 local Section = Tab:AddSection({
 
-	Name = "🤓🤓🤓"
+	Name = "数值"
+
+})
+
+Tab:AddSlider({
+
+	Name = "速度",
+
+	Min = 16,
+
+	Max = 200,
+
+	Default = 16,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+	end    
+
+})
+Tab:AddSlider({
+
+	Name = "跳跃高度",
+
+	Min = 50,
+
+	Max = 200,
+
+	Default = 50,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end    
 
 })
 
 Tab:AddTextbox({
 	Name = "移动速度",
-	Default = "",
+	Default = "移速",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
@@ -603,7 +609,7 @@ Tab:AddTextbox({
 
  Tab:AddTextbox({
 	Name = "跳跃高度",
-	Default = "",
+	Default = "跳跃",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
@@ -612,7 +618,7 @@ Tab:AddTextbox({
 
 Tab:AddTextbox({
 	Name = "最大血量",
-	Default = "",
+	Default = "血量",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.MaxHealth = Value
@@ -621,27 +627,26 @@ Tab:AddTextbox({
 
 Tab:AddTextbox({
 	Name = "当前血量",
-	Default = "",
+	Default = "血量",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.Health = Value
 	end	 
 })
 
-Tab:AddButton({
-	Name = "回满血",
-	Callback = function()
-game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth 
-end
-})
-
 Tab:AddTextbox({
 	Name = "重力设置",
-	Default = "",
+	Default = "重力",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Workspace.Gravity = Value
 	end
+})
+
+local Section = Tab:AddSection({
+
+	Name = "范围区"
+
 })
 
 Tab:AddButton({
@@ -738,6 +743,40 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/CAQ9x4A7"))()
     end
 })
+
+local Section = Tab:AddSection({
+
+	Name = "功能区"
+
+})
+
+Tab:AddToggle({
+	Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
 Tab:AddButton({
 	Name = "墙行走",
 	Callback = function()
@@ -776,33 +815,6 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
   	end    
-})
-
-Tab:AddToggle({
-	Name = "穿墙",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
 })
 
 Tab:AddButton({
@@ -929,11 +941,23 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
   })
 
+local Section = Tab:AddSection({
+
+	Name = "脚本区"
+
+})
+
 Tab:AddButton({
 	Name = "安",
 	Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
     end
+})
+
+local Section = Tab:AddSection({
+
+	Name = "自动区"
+
 })
 
 autoswing = false
@@ -1440,13 +1464,13 @@ end
 
 local Tab = Window:MakeTab({
     Name = " 监狱人生",
-    Icon = "rbxassetid://7733666258",
+    Icon = "rbxassetid://7743871002",
     PremiumOnly = false
 })
 
 local Tab = Window:MakeTab({
 	Name = "FE脚本",
-	Icon = "rbxassetid://7733666258",
+	Icon = "rbxassetid://7733765398",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -1470,7 +1494,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
   Name = "脚本中心",
-  Icon = "rbxassetid://7743873212",
+  Icon = "rbxassetid://8997384977",
   PremiumOnly = false
 })
 
@@ -1662,7 +1686,7 @@ game.Players.PlayerAdded:Connect(playerAdded)
 
 local Tab = Window:MakeTab({
     Name = "兵工厂",
-    Icon = "rbxassetid://7733666258",
+    Icon = "rbxassetid://7743870731",
     PremiumOnly = false
 })
 
@@ -1741,7 +1765,7 @@ local Tab= Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "1",
+	Name = "1(可能会发生冲突)",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
     end
