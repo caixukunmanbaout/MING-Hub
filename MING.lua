@@ -73,8 +73,8 @@ local about = Window:MakeTab({
 about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("你现在服务器的ID"," "..game.GameId.."")
-about:AddParagraph("版本:V0.3.8")
-about:AddParagraph("更新内容: 添加了MM2")
+about:AddParagraph("版本:V0.4")
+about:AddParagraph("更新内容: 更新了UI颜色")
 about:AddParagraph("随缘更新")
 about:AddParagraph("更新时间不知道🤓👌")
 about:AddParagraph("😋😋😋")
@@ -1679,7 +1679,7 @@ game.Players.PlayerAdded:Connect(playerAdded)
 
 local Tab = Window:MakeTab({
     Name = "MM2[破坏者谜团]",
-    Icon = "rbxassetid://7743870731",
+    Icon = "rbxassetid://7733720483",
     PremiumOnly = false
 })
 
