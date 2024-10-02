@@ -1679,7 +1679,7 @@ game.Players.PlayerAdded:Connect(playerAdded)
 
 local Tab = Window:MakeTab({
     Name = "MM2[破坏者谜团]",
-    Icon = "rbxassetid://7733720483",
+    Icon = "rbxassetid://7743870731",
     PremiumOnly = false
 })
 
