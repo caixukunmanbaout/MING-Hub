@@ -74,7 +74,7 @@ about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("你现在服务器的ID"," "..game.GameId.."")
 about:AddParagraph("版本:V0.3.8")
-about:AddParagraph("更新内容: 将汉化the rake脚本无法使用的问题修复")
+about:AddParagraph("更新内容: 添加了MM2")
 about:AddParagraph("随缘更新")
 about:AddParagraph("更新时间不知道🤓👌")
 about:AddParagraph("😋😋😋")
@@ -1505,13 +1505,6 @@ Tab:AddButton({
     
   end
 })
-Tab:AddButton({
-  Name = "剑客v4",
-  Callback = function ()
-    jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://shz.al/~JianKeV4')))()
-    
-  end
-})
 
 Tab:AddButton({
   Name = "皇脚本",
@@ -1685,6 +1678,19 @@ game.Players.PlayerAdded:Connect(playerAdded)
 })
 
 local Tab = Window:MakeTab({
+    Name = "MM2[破坏者谜团]",
+    Icon = "rbxassetid://7743870731",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
     Name = "兵工厂",
     Icon = "rbxassetid://7743870731",
     PremiumOnly = false
@@ -1775,4 +1781,11 @@ local Tab= Window:MakeTab({
 	Name = "武器库",
 	Icon = "rbxassetid://7733920444",
 	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+    end
 })
