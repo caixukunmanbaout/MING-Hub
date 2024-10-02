@@ -541,7 +541,7 @@ end)
 Tab:AddButton({
 	Name = "控制玩家(汉化)",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/Son%20Yunfei%20Hub.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/MING-Hub/refs/heads/main/%E6%8E%A7%E5%88%B6%E7%8E%A9%E5%AE%B6MING.lua"))()
   	end
 })
 
@@ -1382,7 +1382,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "黑洞",
 	Callback = function ()
-	loadstring(game:HttpGet"https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/SYF--Black-Hole.lua")()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/caixukunmanbaout/MING-Hub/refs/heads/main/MING--Black-Hole.lua")()
 	end
 })
 
