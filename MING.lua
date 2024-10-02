@@ -1536,7 +1536,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Project(MING汉化)",
 	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/SYF-Hub/refs/heads/main/SYF---The--Rake.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/MING-Hub/refs/heads/main/MING---The--Rake.lua"))()
 	end
 })
 
