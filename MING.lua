@@ -35,7 +35,7 @@ LBL.Name = "LBL"
 LBL.Parent = LBLG
 LBL.BackgroundColor3 = Color3.new(1, 1, 1)
 LBL.BackgroundTransparency = 1
-LBL.BorderColor3 = Color3.new(25, 25, 25)
+LBL.BorderColor3 = Color3.new(255, 165, 0)
 LBL.Position = UDim2.new(0.75,0,0.010,0)
 LBL.Size = UDim2.new(0, 133, 0, 30)
 LBL.Font = Enum.Font.GothamSemibold
@@ -177,7 +177,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "飞行 V3⁽ᵐⁱⁿᵍ⁾"
+TextLabel.Text = "飞行 V3"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -257,8 +257,8 @@ local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 nowe = false 
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "我操你妈的SYF";
-Text = "我操你妈的SYF";
+Title = "";
+Text = "";
 Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5; 
 
