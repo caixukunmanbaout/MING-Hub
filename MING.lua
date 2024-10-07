@@ -73,8 +73,8 @@ local about = Window:MakeTab({
 about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("你现在服务器的ID"," "..game.GameId.."")
-about:AddParagraph("版本:V0.4")
-about:AddParagraph("更新内容: 更新了UI颜色")
+about:AddParagraph("版本:V0.5")
+about:AddParagraph("更新内容: 音乐")
 about:AddParagraph("随缘更新")
 about:AddParagraph("更新时间不知道🤓👌")
 about:AddParagraph("😋😋😋")
@@ -100,6 +100,32 @@ local Tab = Window:MakeTab({
 	Callback = function()
 game.Players.LocalPlayer:Kick('🤓🤓🤓逗你玩的🤓🤓🤓')
 end
+})
+
+local Tab = Window:MakeTab({
+	Name = "音乐",
+	Icon = "rbxassetid://7733799901",
+	PremiumOnly = false
+})
+ 
+Tab:AddButton({
+   Name = "义勇军进行曲",
+   Callback = function()
+   local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play() 
+   end
+})
+
+Tab:AddButton({
+   Name = "雨中牛郎",
+   Callback = function()
+   local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://16831108393"
+    sound.Parent = game.Workspace
+    sound:Play() 
+   end
 })
 
 local Tab = Window:MakeTab({
@@ -950,7 +976,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "安",
 	Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/ninjalegend')))()
     end
 })
 
@@ -1315,6 +1341,13 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+	Name = "MING[永不更新]",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/caixukunmanbaout/MING-Hub/refs/heads/main/MING-DOORS"))()
+    end
+})
+
+Tab:AddButton({
 	Name = "MS 汉化",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/114514/refs/heads/main/DOORS.txt"))()
@@ -1366,6 +1399,13 @@ Tab:AddButton({
 	Callback = function()
 	setclipboard("96b5ef6e00-8ff6683644-00beaf24cd")
 end
+})
+
+Tab:AddButton({
+  Name = "复制别人的船",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()---https://discord.gg/HjNaYs6AnV discord
+  end
 })
 
 local Tab = Window:MakeTab({
@@ -1679,12 +1719,12 @@ game.Players.PlayerAdded:Connect(playerAdded)
 
 local Tab = Window:MakeTab({
     Name = "MM2[破坏者谜团]",
-    Icon = "rbxassetid://7743870731",
+    Icon = "rbxassetid://7734059095",
     PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "1",
+	Name = "X Hub",
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
   	end    
@@ -1788,4 +1828,17 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
     end
+})
+
+local Tab = Window:MakeTab({
+  Name = "吃掉世界",
+  Icon = "rbxassetid://7733741741",
+  PremiumOnly = false
+  })
+  
+  Tab:AddButton({
+	Name = "安",
+	Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/eattheworld')))()
+	end
 })
