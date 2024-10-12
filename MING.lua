@@ -16,14 +16,47 @@ print("Anti Afk On")
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
+
+local playerGui = game.Players.LocalPlayer.PlayerGui
+
+local fpsGui = Instance.new("ScreenGui")
+fpsGui.Name = "FpsGui"
+fpsGui.Parent = playerGui
+
+local fpsLabel = Instance.new("TextLabel")
+fpsLabel.Name = "FpsLabel"
+fpsLabel.Size = UDim2.new(0, 100, 0, 20)
+fpsLabel.Position = UDim2.new(0, 50, 0, 20)
+fpsLabel.BackgroundColor3 = Color3.new(65, 35, 65)
+fpsLabel.TextColor3 = Color3.new(0, 0, 0)
+fpsLabel.Font = Enum.Font.SourceSans
+fpsLabel.FontSize = Enum.FontSize.Size14
+fpsLabel.Text = "帧率: "
+fpsLabel.Parent = fpsGui
+
+local lastUpdate = tick()
+
+local fps = 0
+
+local function updateFpsCounter()
+    local deltaTime = tick() - lastUpdate
+    lastUpdate = tick()
+
+    fps = math.floor(1 / deltaTime)
+
+    fpsLabel.Text = "帧率: " .. fps
+end
+
+game:GetService("RunService").RenderStepped:Connect(updateFpsCounter)
+
 local CoreGui = game:GetService("StarterGui")
 game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "           反挂机以自动开启",
-    Text = "              MING Hub",
+    Title = "反挂机以自动开启",
+    Text = "MING Hub",
     Icon = "rbxassetid://73940933157135",
     Duration = 60,
     Callback = bindable,
-    Button1 = "谢谢",
+    Button1 = "关闭",
     Button2 = "关闭"
 })
 
@@ -77,7 +110,7 @@ local about = Window:MakeTab({
 about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("你现在服务器的ID"," "..game.GameId.."")
-about:AddParagraph("版本:V1")
+about:AddParagraph("版本:V1.2")
 about:AddParagraph("更新内容: 不知道")
 about:AddParagraph("随缘更新")
 about:AddParagraph("更新时间:不知道🤓👌")
@@ -98,7 +131,7 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://7743873212",
   PremiumOnly = false
   })
-  
+
   Tab:AddButton({
   Name = "复制源码",
 	Callback = function()
@@ -623,6 +656,30 @@ Tab:AddSlider({
 	Callback = function(Value)
 
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+	end    
+
+})
+
+Tab:AddSlider({
+
+	Name = "广角",
+
+	Min = 80,
+
+	Max = 200,
+
+	Default = 16,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
+	Callback = function(Value)
+
+	game.Workspace.CurrentCamera.FieldOfView = Value
 
 	end    
 
