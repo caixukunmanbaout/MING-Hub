@@ -67,7 +67,7 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caix
 local Window = OrionLib:MakeWindow({IntroText = "MING",Name = "MING Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MING Hub"})
 local about = Window:MakeTab({
     Name = "首页",
-    Icon = "rbxassetid://7743875962",
+    Icon = "rbxassetid://11818627050",
     PremiumOnly = false
 })
 about:AddParagraph("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
