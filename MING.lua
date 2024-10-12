@@ -17,10 +17,14 @@ print("Anti Afk On")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "启动成功",
-    Text = "欢迎"..game.Players.LocalPlayer.Name.."使用MING Hub                              [反挂机以自动开启]",
-    Duration = 5,
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "           反挂机以自动开启",
+    Text = "              MING Hub",
+    Icon = "rbxassetid://73940933157135",
+    Duration = 60,
+    Callback = bindable,
+    Button1 = "谢谢",
+    Button2 = "关闭"
 })
 
 local LBLG = Instance.new("ScreenGui", getParent)
