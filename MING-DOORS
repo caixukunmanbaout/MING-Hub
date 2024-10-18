@@ -5,19 +5,19 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/caix
 OrionLib:MakeNotification({
                     Name = "MING",
                     Content = ":-)",
-                    Time = 1000
+                    Time = 2
                 })    
                 
                 local sound = Instance.new("Sound", workspace)
 sound.SoundId = "rbxassetid://4590662766"
 sound:Play()
 
-wait(1000)
+wait(1)
 
 OrionLib:MakeNotification({
                     Name = "你的注入器："..identifyexecutor(),
                     Content = "MING",
-                    Time = 4
+                    Time = 2
                 })
                 
                 local sound = Instance.new("Sound", workspace)
@@ -29,7 +29,7 @@ wait(1)
 OrionLib:MakeNotification({
                     Name = "用户名："..game.Players.LocalPlayer.Character.Name,
                     Content = "MING",
-                    Time = 4
+                    Time = 2
                 })    
                 
                 local sound = Instance.new("Sound", workspace)
@@ -41,7 +41,7 @@ wait(1)
 OrionLib:MakeNotification({
                     Name = "服务器ID："..game.PlaceId,
                     Content = "MING",
-                    Time = 4
+                    Time = 2
                 })
                 
     local sound = Instance.new("Sound", workspace)
