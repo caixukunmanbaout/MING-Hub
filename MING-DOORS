@@ -465,7 +465,7 @@ local Toggles = getgenv().Linoria.Toggles
 local ESPLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/MS-ESP/refs/heads/main/source.lua"))()
 
 local Window = Library:CreateWindow({
-    Title = "mspaint v2 汉化版 | DOORS |测试版3.0.1",
+    Title = "mspaint v2 汉化版 | MING",
     Center = true,
     AutoShow = true,
     Resizable = true,
@@ -476,11 +476,11 @@ local Window = Library:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab("主要的"),
+    Main = Window:AddTab("主要"),
     Exploits = Window:AddTab("移除或无限"),
-    Visuals = Window:AddTab("透视和通知"),
-    Floor = Window:AddTab("楼层"),
-    ["UI Settings"] = Window:AddTab("UI和介绍"),
+    Visuals = Window:AddTab("透视"),
+    Floor = Window:AddTab("Floor2"),
+    ["UI Settings"] = Window:AddTab("介绍"),
 }
 
 --// Captions \\--
