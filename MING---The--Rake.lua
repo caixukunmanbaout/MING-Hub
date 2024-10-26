@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/amKcCR1x"))()
+闲着没事多整几个文件怎么了😡
