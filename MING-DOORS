@@ -10345,7 +10345,7 @@ function UICreator:CreateSettingsTab()
     CreditsGroup:AddLabel("mstudio45")
     CreditsGroup:AddLabel("bacalhauz")
     CreditsGroup:AddLabel("汉化作者:Station【MS开发团队其中一人】")
-    CreditsGroup:AddLabel("汉化修补:小玄奘【XK脚本中心作者】")
+    CreditsGroup:AddLabel("MING")
 
     shared.Library.ToggleKeybind = shared.Options.MenuKeybind
 
