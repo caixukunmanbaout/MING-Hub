@@ -90,7 +90,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
-    agreeFrame.Text = "作者: B站:无敌战神消饭\n 以下全废话🤓\n 1.更新内容: 更新了东西\n 2.更新时间: 不知道\n 3.随缘更新"
+    agreeFrame.Text = "作者: B站:114S14\n 以下全废话🤓\n 1.更新内容: 更新了东西\n 2.更新时间: 不知道\n 3.随缘更新"
     agreeFrame.TextWrapped = true
 
     
